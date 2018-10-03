@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_userChatHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_userChatProfile">
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <ImageView
+            android:id="@+id/iv_emoji"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/icon_message"
+            android:layout_weight="1"/>
+
+
+        <EditText
+            android:id="@+id/et_chatMessage"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:inputType="text"
+            android:layout_weight="3"
+            android:hint="Message"
+            android:background="@drawable/layout_design"
+            android:textColor="@android:color/black" />
+
+
+        <ImageView
+            android:id="@+id/iv_messageSend"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/icon_message_send"
+            android:layout_marginRight="8dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

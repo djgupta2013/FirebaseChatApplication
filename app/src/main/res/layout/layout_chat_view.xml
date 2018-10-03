@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <me.himanshusoni.chatmessageview.ChatMessageView
+        android:id="@+id/RightChatView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cmv_arrowPosition="right"
+        app:cmv_arrowGravity="start"
+        android:visibility="gone"
+        app:cmv_arrowMargin="3dp"
+        android:padding="5dp"
+        app:cmv_contentPadding="10dp"
+        app:cmv_backgroundColor="#884dca60"
+        app:cmv_backgroundColorPressed="#FFBABABA"
+        app:cmv_cornerRadius="3dp"
+        app:cmv_showArrow="true"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/chatMsgSetRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/chatTimeSetRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chatMsgSetRight"
+            android:textSize="10dp"
+            android:layout_marginTop="5dp"/>
+
+
+    </me.himanshusoni.chatmessageview.ChatMessageView>
+
+    <me.himanshusoni.chatmessageview.ChatMessageView
+        android:id="@+id/LeftChatView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cmv_arrowPosition="left"
+        app:cmv_arrowGravity="start"
+        app:cmv_arrowMargin="3dp"
+        android:layout_marginTop="5dp"
+        app:cmv_contentPadding="10dp"
+        app:cmv_backgroundColor="#888bdaf7"
+        android:visibility="gone"
+        app:cmv_backgroundColorPressed="#FFBABABA"
+        app:cmv_cornerRadius="3dp"
+        app:cmv_showArrow="true"
+        android:gravity="left"
+        android:layout_below="@+id/RightChatView">
+
+        <TextView
+            android:id="@+id/chatMsgSetLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/chatTimeSetLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chatMsgSetLeft"
+            android:textSize="10dp"
+            android:layout_marginTop="5dp"/>
+
+    </me.himanshusoni.chatmessageview.ChatMessageView>
+
+
+
+</RelativeLayout>

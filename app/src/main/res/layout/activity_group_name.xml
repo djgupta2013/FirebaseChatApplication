@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chat_background_image"
+    tools:context=".activity.GroupNameActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/groupProfile_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_person_black"
+        app:civ_border_color="#FF000000"
+        android:layout_marginTop="10dp"
+        app:civ_border_width="2dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/groupImageSend"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="121dp"
+        android:layout_marginTop="168dp"
+        android:src="@drawable/ic_photo_camera_black_24dp"
+        app:civ_circle_background_color="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/groupProfile_image"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Please enter group name" />
+
+    <EditText
+        android:id="@+id/et_groupName"
+        android:layout_width="200dp"
+        android:inputType="text"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_group"
+        android:layout_marginTop="5dp"
+        android:layout_centerInParent="true"/>
+
+
+    <Button
+        android:onClick="createGroup"
+        android:id="@+id/btn_submitGroupName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/et_groupName"
+        android:text="submit"
+        />
+
+
+
+</RelativeLayout>
