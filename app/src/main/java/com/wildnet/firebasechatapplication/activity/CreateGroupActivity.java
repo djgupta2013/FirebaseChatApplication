@@ -54,6 +54,7 @@ public class CreateGroupActivity extends AppCompatActivity implements NewGroupCr
         recyclerView = (RecyclerView) findViewById(R.id.recycler_Newgroup);
     }
 
+
     private void getAllUser() {
         DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
         rootRef.child("User").addValueEventListener(new ValueEventListener() {
